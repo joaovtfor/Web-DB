@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clientes</title>
+    <title>Produtos</title>
 </head>
 <body>
-    <b>Lista CLIENTES</b>
+    <b>Lista PRODUTOS</b>
     </br>
     <table border="1">
         <tr>
             <td><b>Código</b></td>
-            <td><b>Nome</b></td>
+            <td><b>Descrição</b></td>
+            <td><b>Preço</b></td>
         </tr>
 
         <?php
@@ -24,19 +25,21 @@
             }
 
             //criar query
-            $cliente = "SELECT * FROM Cliente";
-            $resultado = mysqli_query($conn, $cliente);
+            $produto = "SELECT * FROM Produto";
+            $resultado = mysqli_query($conn, $produto);
 
             while($i = mysqli_fetch_assoc($resultado)) {
         ?>
             <tr>
-                <td><?php echo $i['codCliente']?></td>
-                <td><?php echo $i['nome']?></td>
+                <td><?php echo $i['codProduto']?></td>
+                <td><?php echo $i['descricao']?></td>
+                <td><?php echo $i['preco']?></td>
             </tr>
         <?php 
             }
         ?>
     </table>
-    <h4><a href="ClienteFormInsert.html">Cadastrar novo CLIENTE</a></h4>
+    <h4><a href="ProdutoFormInsert.html">Cadastrar novo PRODUTO</a></h4>
+    <h4><a href="ProdutoFormDelete.html">Excluir PRODUTO</a></h4>
 </body>
 </html>
