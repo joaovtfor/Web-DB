@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de PEDIDO</title>
+</head>
+<body>
+    <h2>Cadastro de PEDIDOS</h2>
+
+     <form name="CadPedido" method="POST" action="PedidoInsert.php" >
+        <label>
+            <strong>Código:</strong><br>
+            <input type="text" name="cod" placeholder="Preencha com o código" required><br>
+        </label>
+        <label>
+            <strong>Data:</strong><br>
+            <input type="date" name="data" placeholder="Preencha com a data" required><br>
+        </label>
+        <label>
+            <strong>Cliente:</strong><br>
+            <input name="codcliente" placeholder="Preencha com o Código do Cliente" required><br>
+        </label>
+        <input type="submit" value="Enviar"/>
+    </form>
+</body>
+</html>
