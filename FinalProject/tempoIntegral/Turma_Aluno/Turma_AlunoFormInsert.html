@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de vínculo Turma_Aluno</title>
+</head>
+<body>
+    <h1>
+        <a href="../index.html">
+             <img src="../img/logo.png" alt="Logo UPF" />
+        </a>
+    </h1>
+    
+    <h2>Cadastro de vínculo Turma_Aluno</h2>
+
+     <form name="CadTurma_Aluno" method="POST" action="../_insert.php" >
+        <input type=hidden name=tabela value="turma_aluno">
+
+        <label>
+            <strong>Código do Aluno:</strong><br>
+            <input type="text" name="input_aluno" placeholder="Preencha o código de aluno" required><br>
+        </label>
+        <label>
+            <strong>Código da Turma:</strong><br>
+            <input type="text" name="input_turma" placeholder="Preencha o código de turma" required><br>
+        </label>
+
+        <input type="submit" value="Enviar"/>
+    </form>
+
+
+</body>
+</html>

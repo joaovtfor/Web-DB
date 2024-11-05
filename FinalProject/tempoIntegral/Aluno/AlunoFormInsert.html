@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Aluno</title>
+</head>
+<body>
+    <h1>
+        <a href="../index.html">
+             <img src="../img/logo.png" alt="Logo UPF" />
+        </a>
+    </h1>
+    
+    <h2>Cadastro de Alunos</h2>
+
+     <form name="CadAluno" method="POST" action="../_insert.php" >
+        <input type=hidden name=tabela value="aluno">
+        
+        <label>
+            <strong>Nome:</strong><br>
+            <input type="text" name="input_nome" placeholder="Preencha o nome" required><br>
+        </label>
+        <label>
+            <strong>Matrícula:</strong><br>
+            <input type="text" name="input_matricula" placeholder="Preencha a matrícula" required><br>
+        </label>
+        <label>
+            <strong>Observações:</strong><br>
+            <input type="text" name="input_observacoes" placeholder="Preencha as observações"><br>
+        </label>
+        <label>
+            <strong>Escola:</strong><br>
+            <input type="text" name="input_escola" placeholder="Preencha o código da escola" required><br>
+        </label>
+
+        <input type="submit" value="Enviar"/>
+    </form>
+
+
+</body>
+</html>

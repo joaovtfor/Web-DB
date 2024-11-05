@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Frequência</title>
+</head>
+<body>
+    <h1>
+        <a href="../index.html">
+             <img src="../img/logo.png" alt="Logo UPF" />
+        </a>
+    </h1>
+    
+    <h2>Cadastro de Frequências</h2>
+
+     <form name="CadFrequência" method="POST" action="../_insert.php" >
+        <input type=hidden name=tabela value="chamada_frequencia">
+
+        <label>
+            <strong>Data:</strong><br>
+            <input type="date" name="input_data" placeholder="Preencha a data" required><br>
+        </label>
+        <label>
+            <strong>Status:</strong><br>
+            <input type="text" name="input_status" placeholder="Preencha o status" required><br>
+        </label>
+        <label>
+            <strong>Aluno:</strong><br>
+            <input type="text" name="input_aluno" placeholder="Preencha o código do aluno" required><br>
+        </label>
+        <label>
+            <strong>Turma:</strong><br>
+            <input type="text" name="input_turma" placeholder="Preencha o código da turma" required><br>
+        </label>
+
+        <input type="submit" value="Enviar"/>
+    </form>
+
+
+</body>
+</html>
