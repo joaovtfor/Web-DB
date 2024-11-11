@@ -5,15 +5,63 @@
     <title>Projeto Tempo Integral</title>
   </head>
   <body>
-    <h2> CRUD - Projeto Tempo Integral </h1>
-    <h3><a href="./Escola/EscolaSelect.php">Escola</a></h3>
-    <h3><a href="./Turma/TurmaSelect.php">Turma</a></h3>
-    <h3><a href="./Aluno/AlunoSelect.php">Aluno</a></h3>
-    <h3><a href="./Turma_aluno/Turma_alunoSelect.php">Vínculo Turma_Aluno</a></h3>
-    <h3><a href="./Frequencia/FrequenciaSelect.php">Frequência</a></h3>
-    <p> </p>
-    <p><br>
-    </p>
-    <p></p>
+    <div class="container">
+      <div class="titleContainer">
+        <h2 class="title"> CRUD - Projeto Tempo Integral </h1>
+      </div>
+      <div class="linksContainer">
+        <h3><a href="./Escola/EscolaSelect.php" class="link">Escola</a></h3>
+        <h3><a href="./Turma/TurmaSelect.php" class="link">Turma</a></h3>
+        <h3><a href="./Aluno/AlunoSelect.php" class="link">Aluno</a></h3>
+        <h3><a href="./Turma_aluno/Turma_alunoSelect.php" class="link">Vínculo Turma_Aluno</a></h3>
+        <h3><a href="./Frequencia/FrequenciaSelect.php" class="link">Frequência</a></h3>
+      </div>
+    </div>
   </body>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Inter", sans-serif;
+    }
+
+    .container {
+      width: 100%;
+      height: 100vh;
+      background-color: #EDEDED;
+    }
+
+    .linksContainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 50px;
+    }
+
+    .link {
+      width: 200px;
+      text-decoration: none;
+      color: rgb(3, 3, 94);
+      transition: 0.5s; 
+      border-radius: 20px;
+      padding: 10px;
+    }
+
+    .link:hover {
+      color: rgb(72, 72, 243);
+      font-weight: bold;
+      background-color: #FFF;
+    }
+
+    .titleContainer {
+      display: flex;
+      justify-content: center;
+      align-items: start;
+    }
+
+    .title {
+      color: rgb(3, 3, 94);
+    }
+  </style>
 </html>
