@@ -1,0 +1,7 @@
+CREATE VIEW QUANTIDADE_TOTAL_INGRESSOS_EVENTO AS
+SELECT evento.Nome, ingresso.Quantidade
+FROM Evento
+JOIN Ingresso ON evento.CodEvento = ingresso.CodEvento;
+
+SELECT * FROM QUANTIDADE_TOTAL_INGRESSOS_EVENTO
+WHERE Quantidade > 500;
